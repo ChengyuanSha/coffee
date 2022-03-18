@@ -2,12 +2,12 @@ import CoffeeButton from './CoffeeButton'
 
 const Body = () => {
   return (
-    <body className="body">
-        <CoffeeButton color='blue' text='coffee'/>
-        <CoffeeButton color='blue' text='coffee'/>
-        <CoffeeButton color='blue' text='coffee'/>
-        <CoffeeButton color='blue' text='coffee'/>
-    </body>
+    <div className="body">
+        <CoffeeButton color='blue' text='LATTE'/>
+        <CoffeeButton color='blue' text='CAPPUCCINO'/>
+        <CoffeeButton color='blue' text='ESPRESSO'/>
+        <CoffeeButton color='blue' text='MOCHA'/>
+    </div>
   )
 }
 

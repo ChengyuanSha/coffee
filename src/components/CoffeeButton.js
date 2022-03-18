@@ -1,29 +1,41 @@
 import PropTypes from 'prop-types'
 import coffee1 from '../assets/coffee1.jpg'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Button } from 'react-bootstrap'
 
-const Button = ({color, text}) => {
-	const onClick = (e) => {
-		console.log(e)
-	}
+
+
+const CoffeeButton = ({color, text}) => {
+
+  function saveData(name) {
+    // save data to user session
+    let obj = {'coffee_type': name, 'date': new Date().toLocaleString() + ''};
+    localStorage.setItem('CoffeeData', JSON.stringify(obj));
+    // console.log("Saved: " + JSON.stringify(obj))
+  }
 
   return (
-    <button onClick={onClick} 
+    <div>
+    <Button onClick={() => saveData(text)} 
     style={{backgroundColor:color, backgroundImage: `url(${coffee1})`}}
+    variant="outline-light"
     className="rbtn"
     >
-        {text}
-    </button>
+    {text}
+    </Button>
+    {/* <AddButton/> */}
+    </div>
   )
 }
 
 
-Button.defaultProps = {
+CoffeeButton.defaultProps = {
     color: 'steelblue'
 }
 
-Button.propType = {
+CoffeeButton.propType = {
     text: PropTypes.string,
     color: PropTypes.string,
 }
 
-export default Button
+export default CoffeeButton

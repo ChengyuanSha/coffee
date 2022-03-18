@@ -1,32 +1,40 @@
 import PropTypes from 'prop-types'
-import { useState, useRef} from 'react'
+import { useState, useRef, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Button } from 'react-bootstrap'
 import { CSVLink } from "react-csv";
 
 const AddButton = ({color, text}) => {
-  const [coffeeCSVData, setcoffeeCSVData] = useState([])
+  const [csvdata, setCsvdata] = useState([])
   const csvLink = useRef() 
 
+  useEffect(() => {
+    console.log(csvdata.length)
+    if (csvdata.length !== 0)
+      csvLink.current.link.click();
+  }, [csvdata]);
+
   const getData = () => {
-    let data = localStorage.getItem('CoffeeData');
+    var data = localStorage.getItem('CoffeeData');
     data = JSON.parse(data);
-    setcoffeeCSVData([data]);
-    console.log(data);
-    csvLink.current.link.click();
+    data = [data]
+    setCsvdata(data)
+    // console.log("coffee csv data", csvdata);
+    // console.log("current csv data", [data]);
+    // csvLink.current.link.click();
     // alert("Recorded");
   }
 
   return (
     <div>
-      <Button onClick={() => getData()} 
+      <Button onClick={getData} 
       style={{backgroundColor:color}}
       >
       {text}
       </Button>
       <CSVLink
-      data={coffeeCSVData}
-      filename='coffeeCSVData.csv'
+      data={csvdata}
+      filename='csvdata.csv'
       className='hidden'
       ref={csvLink}
       target='_blank'
