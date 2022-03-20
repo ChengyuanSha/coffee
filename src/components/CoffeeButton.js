@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types'
-import coffee1 from '../assets/coffee1.jpg'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Button } from 'react-bootstrap'
 
 
 
-const CoffeeButton = ({color, text}) => {
+const CoffeeButton = ({color, text, coffeeImgPath}) => {
 
   function saveData(name) {
     // save data to user session
@@ -16,14 +13,15 @@ const CoffeeButton = ({color, text}) => {
 
   return (
     <div>
-    <Button onClick={() => saveData(text)} 
-    style={{backgroundColor:color, backgroundImage: `url(${coffee1})`}}
-    variant="outline-light"
+    <input type="checkbox" id="btnControl"/>  
+    <button onClick={() => saveData(text)} 
+    style={{backgroundColor:color, backgroundImage: `url(${coffeeImgPath})`}}
+    variant="outline-dark"
     className="rbtn"
+    for="btnControl"
     >
     {text}
-    </Button>
-    {/* <AddButton/> */}
+    </button>
     </div>
   )
 }

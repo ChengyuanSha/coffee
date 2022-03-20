@@ -6,8 +6,8 @@ import AddButton from './AddButton'
 const Header = ({ title }) => {
   return (
     <header className='header'>
-        <h1>{title}</h1>
-        <AddButton color='green' text='Add'/>
+        <h2>{title}</h2>
+        <AddButton color='green' text='Save Log'/>
     </header>
 
   )

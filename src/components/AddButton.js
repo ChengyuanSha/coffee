@@ -9,7 +9,7 @@ const AddButton = ({color, text}) => {
   const csvLink = useRef() 
 
   useEffect(() => {
-    console.log(csvdata.length)
+    // console.log(csvdata.length)
     if (csvdata.length !== 0)
       csvLink.current.link.click();
   }, [csvdata]);
@@ -22,13 +22,12 @@ const AddButton = ({color, text}) => {
     // console.log("coffee csv data", csvdata);
     // console.log("current csv data", [data]);
     // csvLink.current.link.click();
-    // alert("Recorded");
   }
 
   return (
     <div>
       <Button onClick={getData} 
-      style={{backgroundColor:color}}
+      size="lg"
       >
       {text}
       </Button>
