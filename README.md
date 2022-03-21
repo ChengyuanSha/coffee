@@ -4,6 +4,7 @@
 
 Run in terminal:
 ```
+npm i react-scripts
 npm start
 ```
 
