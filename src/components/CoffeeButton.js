@@ -8,7 +8,7 @@ const CoffeeButton = ({color, text, coffeeImgPath}) => {
     // save data to user session
     let obj = {'coffee_type': name, 'date': new Date().toLocaleString() + ''};
     localStorage.setItem('CoffeeData', JSON.stringify(obj));
-    // console.log("Saved: " + JSON.stringify(obj))
+    console.log("Coffee Type Saved: " + JSON.stringify(obj))
   }
 
   return (

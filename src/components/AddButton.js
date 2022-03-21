@@ -15,9 +15,10 @@ const AddButton = ({color, text}) => {
   }, [csvdata]);
 
   const getData = () => {
-    var data = localStorage.getItem('CoffeeData');
-    data = JSON.parse(data);
-    data = [data]
+    let coffeeType = localStorage.getItem('CoffeeData')
+    let temp = localStorage.getItem('Temperature')
+    // var data = localStorage.getItem('CoffeeData');
+    let data = [JSON.parse(coffeeType), JSON.parse(temp)]
     setCsvdata(data)
     // console.log("coffee csv data", csvdata);
     // console.log("current csv data", [data]);
