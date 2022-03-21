@@ -9,16 +9,16 @@ const CoffeeButton = ({color, text, coffeeImgPath}) => {
     let obj = {'coffee_type': name, 'date': new Date().toLocaleString() + ''};
     localStorage.setItem('CoffeeData', JSON.stringify(obj));
     console.log("Coffee Type Saved: " + JSON.stringify(obj))
+    // console.log(document.getElementById("rbtn").style)
+    // document.getElementsByClassName("rbtn").style["boxShadow"] = "245, 29, 22, 0.959";
   }
 
   return (
     <div>
-    <input type="checkbox" id="btnControl"/>  
     <button onClick={() => saveData(text)} 
     style={{backgroundColor:color, backgroundImage: `url(${coffeeImgPath})`}}
     variant="outline-dark"
     className="rbtn"
-    for="btnControl"
     >
     {text}
     </button>

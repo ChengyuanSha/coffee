@@ -17,7 +17,6 @@ const AddButton = ({color, text}) => {
   const getData = () => {
     let coffeeType = localStorage.getItem('CoffeeData')
     let temp = localStorage.getItem('Temperature')
-    // var data = localStorage.getItem('CoffeeData');
     let merge_data = Object.assign({}, JSON.parse(coffeeType),  JSON.parse(temp));
     let data = [merge_data]
     setCsvdata(data)

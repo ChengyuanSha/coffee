@@ -15,7 +15,7 @@ const Body = () => {
         <CoffeeButton color='blue' text='CAPPUCCINO' coffeeImgPath={coffee2}/>
         <CoffeeButton color='blue' text='ESPRESSO' coffeeImgPath={coffee3}/>
         </div>
-        <h2>Choose a temperature</h2>
+        <h2 className='bodyTxt'>Choose a temperature</h2>
         <div className="body">
         <TempButton color='blue' text='Low' coffeeImgPath={coffee4}/>
         <TempButton color='blue' text='Med' coffeeImgPath={coffee5}/>
