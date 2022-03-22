@@ -14,10 +14,7 @@ const AddButton = ({color, text}) => {
   }, [csvdata]);
 
   const getData = () => {
-    let CoffeeButton = localStorage.getItem('CoffeeButtonData')
-let TempButton = localStorage.getItem('TempButtonData')
-let TempButton2 = localStorage.getItem('TempButton2Data')
-let merge_data = Object.assign({},JSON.parse(CoffeeButton), JSON.parse(TempButton), JSON.parse(TempButton2),{'date': new Date().toLocaleString() + ''});
+    $HOLDER$
     let data = [merge_data]
     setCsvdata(data)
   }

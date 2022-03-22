@@ -1,0 +1,52 @@
+{
+    "button0" : {
+        "instruction" : "Choose a Coffee",
+        "button_type" : "CoffeeButton",
+        "buttons" : {
+            "name0" : "Expresso",
+            "name1" : "Americano",
+            "name2" : "Latte",
+            "name3" : "Latte"
+        },
+        "images" : {
+            "name0" : "../assets/coffee1.jpg",
+            "name1" : "../assets/coffee2.jpg",
+            "name2" : "../assets/coffee3.jpg",
+            "name3" : "../assets/coffee3.jpg"
+        }
+    },
+
+    "button1" : {
+        "instruction" : "Choose a temperature",
+        "button_type" : "TempButton",
+        "buttons" : {
+            "name0" : "High",
+            "name1" : "Med",
+            "name2" : "Low"
+        },
+        "images" : {
+            "name0" : "../assets/coffee4.jpg",
+            "name1" : "../assets/coffee5.jpg",
+            "name2" : "../assets/coffee6.jpg"
+        }
+    },
+
+    "button2" : {
+        "instruction" : "Choose a temperature2",
+        "button_type" : "TempButton2",
+        "buttons" : {
+            "name0" : "High",
+            "name1" : "Med",
+            "name2" : "Low"
+        },
+        "images" : {
+            "name0" : "../assets/coffee4.jpg",
+            "name1" : "../assets/coffee5.jpg",
+            "name2" : "../assets/coffee6.jpg"
+        }
+    }
+
+    
+
+
+}

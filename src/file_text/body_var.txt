@@ -1,0 +1,4 @@
+        <h2 className='bodyTxt'>$INSTRUCTION$</h2>
+        <div className="body">
+        $HOLDER$
+        </div>

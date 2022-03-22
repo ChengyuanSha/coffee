@@ -9,17 +9,20 @@ const AddButton = ({color, text}) => {
   const csvLink = useRef() 
 
   useEffect(() => {
+    // console.log(csvdata.length)
     if (csvdata.length !== 0)
       csvLink.current.link.click();
   }, [csvdata]);
 
   const getData = () => {
-    let CoffeeButton = localStorage.getItem('CoffeeButtonData')
-let TempButton = localStorage.getItem('TempButtonData')
-let TempButton2 = localStorage.getItem('TempButton2Data')
-let merge_data = Object.assign({},JSON.parse(CoffeeButton), JSON.parse(TempButton), JSON.parse(TempButton2),{'date': new Date().toLocaleString() + ''});
+    let coffee = localStorage.getItem('CoffeeData')
+    let temp = localStorage.getItem('Temperature')
+    let merge_data = Object.assign({}, JSON.parse(coffee),  JSON.parse(temp));
     let data = [merge_data]
     setCsvdata(data)
+    // console.log("coffee csv data", csvdata);
+    // console.log("current csv data", [data]);
+    // csvLink.current.link.click();
   }
 
   return (

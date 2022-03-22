@@ -15,9 +15,9 @@ const Header = ({ title }) => {
 
 
 
-Header.defaultProps = {
-    title: 'Choose a Coffee',
-}
+// Header.defaultProps = {
+//     title: 'Choose a Coffee',
+// }
   
 
 Header.protoTypes = {

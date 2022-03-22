@@ -1,26 +1,36 @@
+import PropTypes from 'prop-types'
 
 
-const TempButton = ({color, text, coffeeImgPath}) => {
 
-    function saveData(name) {
-      // save data to user session
-      let obj = {'temperature': name};
-      localStorage.setItem('Temperature', JSON.stringify(obj));
-      console.log("Temperature Saved: " + JSON.stringify(obj))
-    }
-  
-    return (
-      <div>
-      <button onClick={() => saveData(text)} 
-      style={{backgroundColor:color, backgroundImage: `url(${coffeeImgPath})`}}
-      variant="outline-dark"
-      className="rbtnTemp"
-      >
-      {text}
-      </button>
-      </div>
-    )
+const TempButton = ({color, text, ImgPath}) => {
+
+  function saveData(name) {
+    let obj = {'TempButton': name};
+    localStorage.setItem('TempButtonData', JSON.stringify(obj));
+    console.log("Saved: " + JSON.stringify(obj))
   }
-  
-  
-  export default TempButton
+
+  return (
+    <div>
+    <button onClick={() => saveData(text)} 
+    style={{backgroundColor:color, backgroundImage: `url(${ImgPath})`}}
+    variant="outline-dark"
+    className="button1_btn"
+    >
+    {text}
+    </button>
+    </div>
+  )
+}
+
+
+TempButton.defaultProps = {
+    color: 'steelblue'
+}
+
+TempButton.propType = {
+    text: PropTypes.string,
+    color: PropTypes.string,
+}
+
+export default TempButton

@@ -2,11 +2,11 @@ import PropTypes from 'prop-types'
 
 
 
-const CoffeeButton = ({color, text, ImgPath}) => {
+const TempButton2 = ({color, text, ImgPath}) => {
 
   function saveData(name) {
-    let obj = {'CoffeeButton': name};
-    localStorage.setItem('CoffeeButtonData', JSON.stringify(obj));
+    let obj = {'TempButton2': name};
+    localStorage.setItem('TempButton2Data', JSON.stringify(obj));
     console.log("Saved: " + JSON.stringify(obj))
   }
 
@@ -15,7 +15,7 @@ const CoffeeButton = ({color, text, ImgPath}) => {
     <button onClick={() => saveData(text)} 
     style={{backgroundColor:color, backgroundImage: `url(${ImgPath})`}}
     variant="outline-dark"
-    className="button0_btn"
+    className="button2_btn"
     >
     {text}
     </button>
@@ -24,13 +24,13 @@ const CoffeeButton = ({color, text, ImgPath}) => {
 }
 
 
-CoffeeButton.defaultProps = {
+TempButton2.defaultProps = {
     color: 'steelblue'
 }
 
-CoffeeButton.propType = {
+TempButton2.propType = {
     text: PropTypes.string,
     color: PropTypes.string,
 }
 
-export default CoffeeButton
+export default TempButton2

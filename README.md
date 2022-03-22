@@ -1,12 +1,18 @@
-# Small React Coffee App runs on Raspberry Pi
+# Mulab Coffee Project 
 
-## Run Locally
+Analyze coffee consumption behaviour and prefereces
 
-Run in terminal:
-```
-npm install
-npm start
-```
+## Usage
+Run in terminal:<br />
+npm start <br />
+Button config file: /src/config.json <br />
+Compile new button: /src/gen_files.py <br />
+Combine output csv: /src/combine_output.py <br />
 
-Then open [http://localhost:3000](http://localhost:3000) to view it in your local browser.
+## Requirements
+python <br />
+nodejs > 1.4 <br />
+npm <br /> 
+pandas <br />
 
+## Citing This Work
