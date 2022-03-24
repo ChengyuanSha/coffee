@@ -1,0 +1,34 @@
+{
+  "coffeeInfo": [
+    {
+      "id": 1,
+      "coffee_type": "LATTE",
+      "dare": "3/24/2022, 10:55:14",
+      "temperature": "Low"
+    },
+    {
+      "id": 2,
+      "coffee_type": "LATTE222",
+      "dare": "222",
+      "temperature": "Low"
+    },
+    {
+      "coffee_type": "ESPRESSO",
+      "date": "3/24/2022, 11:37:40 AM",
+      "temperature": "High",
+      "id": 1648136261339
+    },
+    {
+      "coffee_type": "ESPRESSO",
+      "date": "3/24/2022, 11:38:23 AM",
+      "temperature": "High",
+      "id": 1648136307442
+    },
+    {
+      "coffee_type": "CAPPUCCINO",
+      "temperature": "Med",
+      "id": 1648136836452,
+      "date": "3/24/2022, 11:47:16 AM"
+    }
+  ]
+}

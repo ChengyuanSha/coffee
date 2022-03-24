@@ -6,7 +6,7 @@ const TempButton = ({color, text, coffeeImgPath}) => {
       // save data to user session
       let obj = {'temperature': name};
       localStorage.setItem('Temperature', JSON.stringify(obj));
-      console.log("Temperature Saved: " + JSON.stringify(obj))
+      console.log("Temperature Saved: " + JSON.stringify(obj));
     }
   
     return (

@@ -6,7 +6,7 @@ const CoffeeButton = ({color, text, coffeeImgPath}) => {
 
   function saveData(name) {
     // save data to user session
-    let obj = {'coffee_type': name, 'date': new Date().toLocaleString() + ''};
+    let obj = {'coffee_type': name};
     localStorage.setItem('CoffeeData', JSON.stringify(obj));
     console.log("Coffee Type Saved: " + JSON.stringify(obj))
     // console.log(document.getElementById("rbtn").style)

@@ -105,9 +105,9 @@ body {
   transform: translateY(-7px);
 }
 
-/* .rbtn:focus {      
+.rbtn:focus {      
   box-shadow: 0px 15px 20px rgba(245, 29, 22, 0.959);
-} */
+}
 
 
 /* round button for temp*/
@@ -140,6 +140,6 @@ body {
   transform: translateY(-7px);
 }
 
-/* .rbtnTemp:focus {      
+.rbtnTemp:focus {      
   box-shadow: 0px 15px 20px rgba(245, 29, 22, 0.959);
-} */
+}
