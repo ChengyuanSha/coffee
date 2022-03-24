@@ -7,11 +7,8 @@ import Body from './components/Body';
 
 function App() {
 
-
-
   return (
     <div className="container">
-      {/* <Header title="Coffee Info Collector"/> */}
       <Body/>
     </div>
   );

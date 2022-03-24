@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap'
 const SaveButton = ({text, storageNames}) => {
 
   const saveData = async () => {
+    // retrieve all data from session
     var data = {}
     for (var i = 0; i < storageNames.length; i++) {
         var storedData = localStorage.getItem(storageNames[i]);
@@ -24,7 +25,6 @@ const SaveButton = ({text, storageNames}) => {
       }).then(response => {
         console.log("POST response:", response)
       })
-
 
     } 
 
