@@ -76,7 +76,7 @@ body {
 }
 
 
-/* round button for coffee*/
+/* round button */
 .rbtn {
   border: none;
   color: white;
@@ -105,14 +105,14 @@ body {
   transform: translateY(-7px);
 }
 
-.rbtn:focus {      
+/* .rbtn:focus {      
   box-shadow: 0px 15px 20px rgba(245, 29, 22, 0.959);
-}
+} */
 
 
-/* round button for temp*/
+/* round button selected */
 
-.rbtnTemp {
+.rbtnSelected {
   border: none;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
@@ -128,12 +128,14 @@ body {
   margin: 4px 2px;
   border-radius: 50%;
 
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  background-color: black;
+  box-shadow: 0px 15px 20px rgba(255, 27, 27, 0.726);
+  color: #fff;
+  transform: translateY(-7px);
   cursor: pointer;
 }
 
-.rbtnTemp:hover {
+/* .rbtnTemp:hover {
   background-color: black;
   box-shadow: 0px 15px 20px rgba(255, 27, 27, 0.726);
   color: #fff;
@@ -142,4 +144,7 @@ body {
 
 .rbtnTemp:focus {      
   box-shadow: 0px 15px 20px rgba(245, 29, 22, 0.959);
-}
+} */
+
+
+

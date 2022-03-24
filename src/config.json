@@ -1,0 +1,34 @@
+{
+    "buttonType0" : {
+        "instruction" : "Choose a Coffee Type",
+        "button_type" : "coffeeType",
+        "buttons" : [
+            "Coffee",
+            "Expresso",
+            "Tea"
+        ],
+        "images" : [
+            0,
+            1,
+            2
+        ]
+    },
+
+    "buttonType1" : {
+        "instruction" : "Choose a size",
+        "button_type" : "size",
+        "buttons" : [
+            "One",
+            "Two",
+            "Three",
+            "Spoon"
+        ],
+        "images" : [
+            4,
+            6,
+            5,
+            3
+        ]
+    }
+
+}
