@@ -1,6 +1,6 @@
 {
     "buttonType0" : {
-        "instruction" : "Choose a Coffee Type",
+        "instruction" : "Choose Type",
         "button_type" : "coffeeType",
         "buttons" : [
             "Coffee",
@@ -15,7 +15,7 @@
     },
 
     "buttonType1" : {
-        "instruction" : "Choose a size",
+        "instruction" : "Choose Amount",
         "button_type" : "size",
         "buttons" : [
             "One",

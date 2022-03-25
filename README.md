@@ -1,6 +1,6 @@
 # React Coffee Selection App With (Fake) REST API Backend
 
-Analyze coffee consumption behaviour and prefereces
+Analyze coffee consumption behaviour and prefereces. The website is deployed to the cloud but the backend server is not. 
 
 ## Run Locally
 
@@ -25,7 +25,7 @@ Then open [http://localhost:3000](http://localhost:3000) to view it in your loca
 Click `Save Log` button on the website will create a REST API request to the backend server. The data will be saved in `db.json` JSON database. 
 
 
-### dynamic rendering with config file
+### Dynamic rendering with config file
 
 Modify `src/config.json` can change the number of rows and number of buttons within a row dynamically.
 
